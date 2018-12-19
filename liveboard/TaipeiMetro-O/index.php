@@ -58,13 +58,7 @@ for($k=0;$k<sizeOf($StationResult);$k++){
 			if(strpos($StationLiveboard->{"Timetables"}[$l]->{"Schedule"}[$i]->{"Days"},$weekday) !== false){
 				for($j=0;$j<=sizeOf($StationLiveboard->{"Timetables"}[$l]->{"Schedule"}[$i]->{"Departures"});$j++){
 					$testDate = date("H:i",strtotime($StationLiveboard->{"Timetables"}[$l]->{"Schedule"}[$i]->{"Departures"}[$j]->{"Time"}));
-					if($j -1 < 0){
-						$itm = $j;
-					}else{
-						$itm = $j-1;
-					}
-					$prevDate = date("H:i",strtotime($StationLiveboard->{"Timetables"}[$l]->{"Schedule"}[$i]->{"Departures"}[$itm]->{"Time"}));
-					if($testDate > $time && $prevDate <= $time){
+					if($testDate > $time){
 						
 						switch($StationLiveboard->{"Timetables"}[$l]->{"Direction"}){
 							case "往O54蘆洲站、O21迴龍站":

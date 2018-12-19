@@ -110,7 +110,7 @@ for($i=0;$i<sizeOf($StationResult);$i++){
 	$northboundFlag = 0;
 	//$icn = $StationResult[$i]["StationID"];
 
-	$icn = "./liveboard/TaiwanHSR/THSR.png";
+	$icn = "./liveboard/TaiwanRailway/TaiwanRailway.png";
 
 	$row1 = "";
 	$row2 = "";

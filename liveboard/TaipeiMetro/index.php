@@ -84,13 +84,7 @@ for($j=0;$j<=sizeOf($StationResult);$j++){
 			if($StationLiveboard[$i]->{"ServiceDays"}->{$week} == 1){
 				for($k=0;$k<=sizeOf($StationLiveboard[$i]->{'Timetables'});$k++){
 					$testDate = date("H:i",strtotime($StationLiveboard[$i]->{'Timetables'}[$k]->{'ArrivalTime'}));
-					if($k -1 < 0){
-						$itm = $k;
-					}else{
-						$itm = $k-1;
-					}
-					$prevDate = date("H:i",strtotime($StationLiveboard[$i]->{'Timetables'}[$itm]->{'ArrivalTime'}));
-					if($testDate > $time && $prevDate <= $time){
+					if($testDate > $time){
 						array_push($tmpArr,array('RouteID' => $StationLiveboard[$i]->{'RouteID'}, 'StationID' => $StationLiveboard[$i]->{'StationID'},'StationName' => $StationLiveboard[$i]->{"StationName"}->{"Zh_tw"}, 'Direction' => $StationLiveboard[$i]->{'Direction'},
 						 'DestinationStaionID' => $StationLiveboard[$i]->{'DestinationStaionID'},'DestinationStationName' => $StationLiveboard[$i]->{"DestinationStationName"}->{"Zh_tw"}, 'Time' => $testDate));
 					}

@@ -139,7 +139,7 @@ function zeroFill( number, width )
 </script>
 
 <script>
-var TPI_SourceURL = ["TaipeiMetro/index.php","TaipeiMetro-O/index.php","TaoyuanMetro/index.php","TaiwanHSR/index.php"];
+var TPI_SourceURL = ["TaipeiMetro/index.php","TaipeiMetro-O/index.php","TaoyuanMetro/index.php","TaiwanHSR/index.php","TaiwanRailway/index.php"];
 var TransportInformationArray = [];
 var counterforTPI = 0;
 
