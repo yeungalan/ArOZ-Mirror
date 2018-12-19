@@ -1,3 +1,11 @@
+<?php
+include '../auth.php';
+?>
+<!--
+2018/1/21 Aroz Mirror Edit Project
+
+
+-->
 <html>
 <head>
 <title>ArOZ Mirror</title>
@@ -48,6 +56,8 @@ function ConfirmBtn(){
 	localStorage.setItem("Mirror.Confirm",'true');
 	window.location.href="main.php";
 }
+
+
 </script>
 
 </body>
