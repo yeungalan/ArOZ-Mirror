@@ -1,4 +1,4 @@
-# ArOZ-Mirror
+# ArOZ-Mirror (forked from tobychui/ArOZ-Mirror)
 The alternative to MagicMirror but with clearner interface and nearly no settings required.
 
 <img src="https://raw.githubusercontent.com/tobychui/ArOZ-Mirror/master/ArOZ%20Mirror%20preview.png">
@@ -14,9 +14,7 @@ But the good thing is, you can use it stand along without the ArOZ System, just 
 4. Open the path in your web browser and it works!
 
 ## How to change the display location
-Open the "location.txt", update the text inside the file to the location you want to show.
-For a list of usable locations keywords, please visit:
-https://www.timeanddate.com/weather/?sort=1
+
 
 ## Why there are two README files
 The README.txt is for ArOZ Online BETA's help indexing system. PLEASE DO NOT REMOVE THAT FILE.
