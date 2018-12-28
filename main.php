@@ -173,7 +173,7 @@ var myObj, myJSON, text, obj;
    $( "#country" ).text(location.country);
    $( "#city" ).text(location.city);
    $( "#weathericon").attr('class',"wi " + weather_icon[forecast.condition.code]);
-   $( "#temp" ).text(forecast.condition.temp + " °C");
+   $( "#temp" ).text(forecast.condition.temp + " &#8451;");
    $( "#description" ).text(forecast.condition.text);
    $( "#details" ).html('Forecast: ' + forecast.forecast[0].high + ' / ' + forecast.forecast[0].low + '&nbsp;°C<br>Wind: ' + data.query.results.channel.wind.speed + ' km/h <span class="comp sa20" ><i class="wi wi-wind towards-' + data.query.results.channel.wind.direction + '-deg"></i></span> from ' + data.query.results.channel.wind.direction + 'degree');
   };
